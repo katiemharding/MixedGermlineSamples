@@ -40,7 +40,7 @@ def combine_files(search_text):
 			else:
 				print(file, "too many columns", column_list)
 		#export to csv
-		new_file_name = str(datetime.date.today()) + "combined_file.csv"
+		new_file_name = str(datetime.date.today()) + "_combined_file.csv"
 		combined_file.to_csv(new_file_name, index=False) # save the file before doing calculations
 		print(new_file_name," file created")
 	return(combined_file)
@@ -61,12 +61,12 @@ def label_informative(data_frame):
 	# there are some SNP's with very low counts, possibly due to read error
 	# I chose to ignore those with counts less than 2% as uninformative
 	stacked_file.loc[stacked_file.abs_A > 0.48, 'informative'] = 'False'
-	new_file_name = str(datetime.date.today()) + "calculations_file.csv"
-	stacked_file.to_csv(new_file_name, index = False) # save the file before doing calculations
-	print(new_file_name," file created")
+	new_file_name = str(datetime.date.today()) + "_labels_output_1.csv"
 	# the exercise said to create a file with orig file name, SNP and informative-ness
 	output_1 = stacked_file[['FileName','dbSNP.ID', 'informative' ]]
-	output_1.to_csv('output_1.csv', index = False)
+	output_1.to_csv(new_file_name, index = False)
+	print(new_file_name," file created")
+	# the next function need the calculations, so we need to return the whole file
 	return(stacked_file)
 
 def find_MSF(data_frame):
@@ -76,7 +76,7 @@ def find_MSF(data_frame):
 	# I am chosing standard deviation (std) and standard error (sem).
 	minor_sample_fraction = contam_data.groupby(['FileName'], as_index = False).agg(
 		{'MSF': ['mean', 'count','std', 'sem']})
-	new_file_name = str(datetime.date.today()) + "MSF_output2.csv"
+	new_file_name = str(datetime.date.today()) + "_MSF_output2.csv"
 	minor_sample_fraction.to_csv(new_file_name, index = False) # save the file before doing calculations
 	return(print("minor sample fraction calculated.  file saved as:" , new_file_name))
 
