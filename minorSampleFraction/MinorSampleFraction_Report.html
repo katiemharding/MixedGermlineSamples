@@ -13130,7 +13130,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2020-02-14
+<pre>2020-02-15
 hw_sample
 </pre>
 </div>
@@ -13142,7 +13142,7 @@ hw_sample
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">filenames</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;hw_sample*&#39;</span><span class="p">)</span> <span class="c1"># first import any number of files</span>
@@ -13177,7 +13177,7 @@ hw_sample
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13194,7 +13194,7 @@ hw_sample
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">combined_csv</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13211,7 +13211,7 @@ hw_sample
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -13295,7 +13295,7 @@ hw_sample
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">combine_files</span><span class="p">(</span><span class="n">search_text</span><span class="p">):</span>
@@ -13346,7 +13346,7 @@ hw_sample
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">file1</span> <span class="o">=</span> <span class="n">combine_files</span><span class="p">(</span><span class="s1">&#39;hw_sample*&#39;</span><span class="p">)</span>
@@ -13373,7 +13373,7 @@ hw_sample_7.csv count column includes non-numbers
 hw_sample_6.csv wrong allele list [&#39;B&#39; &#39;R&#39;]
 hw_sample_4.csv too many columns [&#39;allele1&#39;, &#39;count&#39;, &#39;dbSNP.ID&#39;, &#39;test&#39;]
 hw_sample_5.csv columns do not match [&#39;allele1&#39;, &#39;count&#39;, &#39;dbSNP.ID&#39;]
-2020-02-14combined_file.csv  file created
+2020-02-15_combined_file.csv  file created
 </pre>
 </div>
 </div>
@@ -13384,7 +13384,7 @@ hw_sample_5.csv columns do not match [&#39;allele1&#39;, &#39;count&#39;, &#39;d
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">label_informative</span><span class="p">(</span><span class="n">data_frame</span><span class="p">):</span>
@@ -13418,7 +13418,7 @@ hw_sample_5.csv columns do not match [&#39;allele1&#39;, &#39;count&#39;, &#39;d
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test1</span> <span class="o">=</span> <span class="n">label_informative</span><span class="p">(</span><span class="n">file1</span><span class="p">)</span>
@@ -13439,15 +13439,14 @@ hw_sample_5.csv columns do not match [&#39;allele1&#39;, &#39;count&#39;, &#39;d
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2020-02-14_labels_output_1.csv  file created
-[&#39;dbSNP.ID&#39;, &#39;FileName&#39;, &#39;A&#39;, &#39;R&#39;, &#39;freq_A&#39;, &#39;abs_A&#39;, &#39;informative&#39;]
+<pre>2020-02-15_labels_output_1.csv  file created
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -13543,7 +13542,7 @@ hw_sample_5.csv columns do not match [&#39;allele1&#39;, &#39;count&#39;, &#39;d
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">test1</span><span class="p">[</span><span class="s1">&#39;freq_A&#39;</span><span class="p">],</span> <span class="mi">50</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
@@ -13591,7 +13590,7 @@ hw_sample_5.csv columns do not match [&#39;allele1&#39;, &#39;count&#39;, &#39;d
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># minority sample fraction = MSF</span>
@@ -13614,7 +13613,7 @@ hw_sample_5.csv columns do not match [&#39;allele1&#39;, &#39;count&#39;, &#39;d
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test2</span> <span class="o">=</span> <span class="n">find_MSF</span><span class="p">(</span><span class="n">test1</span><span class="p">)</span>
@@ -13631,18 +13630,7 @@ hw_sample_5.csv columns do not match [&#39;allele1&#39;, &#39;count&#39;, &#39;d
 
 <div class="output_area">
 
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[(&#39;FileName&#39;, &#39;&#39;), (&#39;MSF&#39;, &#39;mean&#39;), (&#39;MSF&#39;, &#39;count&#39;), (&#39;MSF&#39;, &#39;std&#39;), (&#39;MSF&#39;, &#39;sem&#39;)]
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -13715,7 +13703,7 @@ hw_sample_5.csv columns do not match [&#39;allele1&#39;, &#39;count&#39;, &#39;d
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">test2</span><span class="p">[</span><span class="s1">&#39;FileName&#39;</span><span class="p">],</span> <span class="mi">100</span><span class="o">*</span> <span class="n">test2</span><span class="p">[(</span><span class="s1">&#39;MSF&#39;</span><span class="p">,</span> <span class="s1">&#39;mean&#39;</span><span class="p">)],</span> <span class="n">xerr</span><span class="o">=</span><span class="mi">100</span><span class="o">*</span><span class="n">test2</span><span class="p">[(</span><span class="s1">&#39;MSF&#39;</span><span class="p">,</span> <span class="s1">&#39;sem&#39;</span><span class="p">)],</span> <span class="n">align</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
@@ -13758,22 +13746,6 @@ hw_sample_5.csv columns do not match [&#39;allele1&#39;, &#39;count&#39;, &#39;d
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Changes-to-production-code">Changes to production code<a class="anchor-link" href="#Changes-to-production-code">&#182;</a></h3><p>This code is fairly bare bones.  In real code, the raw sample files and the completed analysis files don't belong in the same folder.  It would be fairly easy to add this, and even have the python code create a directory for the completed analysis files.</p>
 <p>With more input from the automation team, and from the assay team I could add more realistic methods for error handling.  For example, perhaps the sample with wrong allele values is a human error, and we can change the allele value (not the count) after importing the file.  I would also look into why Sample_2 has so much contamination, and how we can replicate the low contamination in Sample_0.  I would focus on the good results of Sample_0, and try to discover what human differences might have caused it.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>1) NIPT: assume that the minority fraction sample is related to the majority sample as in the
-case of fetal DNA in a maternal background. How do your assumptions about the fetal
-fraction calculation change from the contamination case?
-2) Oncology: assume that the minority fraction sample is derived from germline in the form of
-heterogeneous tumor DNA (say after relapse) in a germline cell-free DNA background.
-3) If your implementation was more bare-bones, how would you identify and test more robust
-software solutions that could be implemented in production code in a regulated
-environment? If assay/target improvements are desired, what would you ask for from the
-assay team?</p>
 
 </div>
 </div>
